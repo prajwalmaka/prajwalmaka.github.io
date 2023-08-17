@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .simple-form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form class="simple-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <label>Interests:</label>
+    <label><input type="checkbox" name="interests" value="coding">Coding</label>
+    <label><input type="checkbox" name="interests" value="reading">Reading</label>
+    <label><input type="checkbox" name="interests" value="sports">Sports</label>
+    
+    <label>Preferred Language:</label>
+    <label><input type="radio" name="language" value="english">English</label>
+    <label><input type="radio" name="language" value="spanish">Nepali</label>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
