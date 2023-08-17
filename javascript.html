@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Display</title>
+</head>
+<body>
+    <script language="Javascript">
+        document.write("Hello World 1");
+        document.getElementById("pid").innerHTML="Hello World 2";
+        console.log("Helloworld 3");
+        window.alert("Helo World 4");
+</script>
+    <hr>
+    <h1 style="background-color:rgba(255,99,71,0.2);">Javascript Output</h1>
+    <p id="pid">Welcome</p>
+    <p id="aid"></p>
+    <script language="Javascript">
+    document.write("Computer Department!");
+    document.getElementById("pid").innerHTML="Computer Department";
+</script>
+<hr>
+    <script type ="text/javascript">
+        var i=0;
+    while(i<=5){
+        document.write("n="+i+"<br>");
+        i++;
+    }
+    </script>
+    <script type="text/javascript">
+    var d= new Date();
+    var time=d.getHours();
+    if (time<10){
+        document.write("Good Morning!");
+    }else{
+        document.write("Good day!");
+    }
+    var d=new Date();
+    theDay=d.getDay();
+    switch (theDay){
+        case 5:
+            document.write("Finally Friday");
+            break;
+        case 6:
+            document.write("Super Saturday");
+            break;
+        case 0:
+            document.write("Sleepy Sunday");
+            break;
+        default:
+            document.write("I'm looking forward to this weekend");
+    }
+</script>
+<hr>
+<h1>Javascript Output</h1>
+<p id="pid">Welcome</p>
+<p id="aid"></p>
+<input type="button" value="Click Me" onclick="document.write('Computer Department!');">
+<hr>
+<script type="text/javascript">
+    document.write("<h1>This is Heading<h1>");
+    document.write("<p> This is a paragraph.</p>");
+    document.write("<p> This is another paragraph.</p>");
+</script>
+<hr>
+<h2>The window.print() Method</h2>
+<p>Click the button to print the current page.</p>
+<input type="Button" onclick="window.print()" value="Print this page">
+<hr>
+<h2>JavaScript Arithemetics</h2>
+<p>JavaScript operators</p>
+<p id="demo1"></p>
+<script>
+    let a,b,c,d,e,f,g;
+    a=5;
+    b=2;
+    c=a+b;
+    d=a-b;
+    e=a*b;
+    f=a/b;
+    g=a%b;
+    document.getElementById("demo1").InnerHTML=c + "<br/>" + d + "<br/>" + e + "<br/>" + f + "<br/>" + g; 
+</script>
+</body>
+</html>
