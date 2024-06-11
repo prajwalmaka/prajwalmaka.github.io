@@ -101,7 +101,7 @@ ul li a:hover{
     cursor: pointer;
 }
 .btn:hover{
-    color: #000;
+    color:white;
 }
 
 .btn:focus{
@@ -173,8 +173,10 @@ ul li a:hover{
 .icons a{
     text-decoration: none;
     color: #fff;
+    margin-top:10%;
 }
 .icons ion-icon{
+    margin-top: 10px;
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
@@ -183,4 +185,11 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: #ff7200;
+}
+.social {
+    margin-top:10px;
+    color:orangered;
+    font-size:20px;
+    text-decoration: underline;
+    margin-left:2%;
 }
