@@ -1,3 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
+  
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +37,10 @@
     background-size: cover;
     height: 100vh;
 }
-
+img {
+    width:20px;
+    height:10px;
+}
 .navbar{
     width: 1200px;
     height: 75px;
